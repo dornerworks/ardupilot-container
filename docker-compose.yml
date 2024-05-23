@@ -1,0 +1,7 @@
+version: '3.6'
+services:
+  dockardu:
+    container_name: dockardu
+    image: dockardu:latest
+    ports:
+      - "5760:5760"

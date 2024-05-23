@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  dockardu_xcompile:
+    build: dockardu_xcompile/.
+    image: dockardu_xcompile:latest
+  dockardu:
+    depends_on:
+      - dockardu_xcompile
+    build: dockardu/.
+    image: dockardu:latest
